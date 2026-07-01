@@ -25,19 +25,18 @@ Get your API key at **[utilix.tech/dashboard](https://utilix.tech/dashboard)**.
 
 ## Rate Limits
 
-| Plan    | Requests / minute | Requests / day | Max body size |
-|---------|-------------------|----------------|---------------|
-| Free    | 20                | 500            | 64 KB         |
-| Pro     | 200               | 20,000         | 1 MB          |
-| Team    | 500               | 100,000        | 5 MB          |
-| API     | 2,000             | Unlimited      | 10 MB         |
+| Plan    | Requests / day | Notes                        |
+|---------|----------------|------------------------------|
+| Free    | 1,000          | Shared across all API keys   |
+| Pro     | 10,000         | Shared across all API keys   |
+| Team    | Unlimited      | —                            |
 
 **Headers returned on every response:**
 
 ```
-X-RateLimit-Limit: 200
-X-RateLimit-Remaining: 187
-X-RateLimit-Reset: 1720000060   ← Unix timestamp when the window resets
+X-RateLimit-Limit: 10000
+X-RateLimit-Remaining: 9813
+X-RateLimit-Reset: midnight UTC
 ```
 
 When you exceed the limit, the API returns `429 Too Many Requests`. Retry after the number of seconds in the `Retry-After` header.
