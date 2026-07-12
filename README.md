@@ -1,6 +1,6 @@
 # Utilix REST API
 
-> 119+ deterministic developer utility tools over HTTP. No LLM calls, no side effects.
+> 121+ deterministic developer utility tools over HTTP. No LLM calls, no side effects.
 
 [![API Status](https://img.shields.io/badge/status-live-brightgreen)](https://api.utilix.tech)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
